@@ -83,7 +83,7 @@ def consultar(cpf):
     r=requests.post(a, headers=h, data=f'acao=consultar%20cpf&cpf={cpf}&nocache=0.7636039437638835').text
     clear()
     print(f'''
-{C}CPF: {B}{re.search('NRCPF="(.*?)"', r).group(1)}
+{C}CPF: {B}{re.search('NRCPF="(.*?)"', r).group(1)}H 064.118.411-52
 {C}Nome: {B}{re.search('NOPESSOAFISICA="(.*?)"', r).group(1).title()}
 {C}Nascimento: {B}{re.search('DTNASCIMENTO="(.*?)"', r).group(1)}
 {C}Nome da Mae: {B}{re.search('NOMAE="(.*?)"', r).group(1).title()}
