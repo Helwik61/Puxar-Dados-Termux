@@ -1,4 +1,4 @@
-#Kratosy/Somos uma legião. 2021 ©
+0#Kratosy/Somos uma legião. 2021 ©
 
 import requests, os, time, base64, json, re
 import platform
